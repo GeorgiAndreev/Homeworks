@@ -6,12 +6,12 @@ public class PersonDemo {
 
 		Person[] people = new Person[10];
 		
-		Person person1 = new Person("Atanas Dobrinkov Petrakiev", (short)34, true);
-		Person person2 = new Person("Veska Aprilova Slavqnova", (short)27, false);
-		Student student1 = new Student("Vasil Paraskevov Karagiozov", (short)20, true, 4.68f);
-		Student student2 = new Student("Penka Naneva Laleva", (short)21, true, 5.24f);
-		Employee employee1 = new Employee("Kalinka Tsvetanova Biserova", (short)35, false, 25);
-		Employee employee2 = new Employee("Borislav Damqnov Iliev", (short)37, true, 27);
+		Person person1 = new Person("Atanas Dobrinkov Petrakiev", (short)34, Gender.MALE);
+		Person person2 = new Person("Veska Aprilova Slavqnova", (short)27, Gender.FEMALE);
+		Student student1 = new Student("Vasil Paraskevov Karagiozov", (short)20, Gender.MALE, 4.68f);
+		Student student2 = new Student("Penka Naneva Laleva", (short)21, Gender.FEMALE, 5.24f);
+		Employee employee1 = new Employee("Kalinka Tsvetanova Biserova", (short)35, Gender.FEMALE, 25);
+		Employee employee2 = new Employee("Borislav Damqnov Iliev", (short)37, Gender.MALE, 27);
 		
 		people[0] = person1;
 		people[1] = person2;

@@ -16,8 +16,8 @@ public class Student extends Person{
 		super();
 	}
 
-	public Student(String name, short age, boolean isMale, float score) {
-		super(name, age, isMale);
+	public Student(String name, short age, Gender gender, float score) {
+		super(name, age, gender);
 		if ((score >= 2) && (score <= 6)) {
 			this.score = score;
 		} else {
@@ -29,11 +29,7 @@ public class Student extends Person{
 		System.out.println("\nStudent information:");
 		System.out.println("name: " + this.name);
 		System.out.println("age: " + this.age);
-		if (isMale) {
-			System.out.println("sex: male");
-		} else {
-			System.out.println("sex: female");
-		}
+		System.out.println("gender: " + this.gender);
 		System.out.println("score: " + this.score);
 	}
 

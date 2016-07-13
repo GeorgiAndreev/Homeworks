@@ -4,8 +4,8 @@ public class Employee extends Person{
 	
 	private float daySalary;
 
-	public Employee(String name, short age, boolean isMale, float daySalary) {
-		super(name, age, isMale);
+	public Employee(String name, short age, Gender gender, float daySalary) {
+		super(name, age, gender);
 		if (daySalary > 0) {
 			this.daySalary = daySalary;
 		} else {
@@ -17,11 +17,7 @@ public class Employee extends Person{
 		System.out.println("\nEmployee information:");
 		System.out.println("name: " + this.name);
 		System.out.println("age: " + this.age);
-		if (isMale) {
-			System.out.println("sex: male");
-		} else {
-			System.out.println("sex: female");
-		}
+		System.out.println("gender: " + this.gender);
 		System.out.println("day salary: " + daySalary);
 	}
 	

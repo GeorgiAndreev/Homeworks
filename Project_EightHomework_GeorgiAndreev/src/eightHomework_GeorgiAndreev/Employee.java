@@ -13,11 +13,10 @@ public class Employee extends Person{
 		}
 	}
 
-	void showEmployeeInfo() {
-		System.out.println("\nEmployee information:");
-		System.out.println("name: " + this.name);
-		System.out.println("age: " + this.age);
-		System.out.println("gender: " + this.gender);
+	@Override
+	void showPersonInfo() {
+		super.showPersonInfo();
+		System.out.println("person position: employee");
 		System.out.println("day salary: " + daySalary);
 	}
 	

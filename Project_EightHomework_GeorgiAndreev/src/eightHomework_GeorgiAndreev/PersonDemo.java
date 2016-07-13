@@ -26,10 +26,10 @@ public class PersonDemo {
 					people[index].showPersonInfo();
 				}
 				if (people[index].getClass() == Student.class) {
-					((Student) people[index]).showStudentInfo();
+					((Student) people[index]).showPersonInfo();
 				}
 				if (people[index].getClass() == Employee.class) {
-					((Employee) people[index]).showEmployeeInfo();
+					((Employee) people[index]).showPersonInfo();
 				}
 			}
 		}

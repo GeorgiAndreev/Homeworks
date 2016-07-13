@@ -26,11 +26,10 @@ public class Student extends Person{
 		}
 	}
 	
-	void showStudentInfo() {
-		System.out.println("\nStudent information:");
-		System.out.println("name: " + this.name);
-		System.out.println("age: " + this.age);
-		System.out.println("gender: " + this.gender);
+	@Override
+	void showPersonInfo() {
+		super.showPersonInfo();
+		System.out.println("person position: student");
 		System.out.println("score: " + this.score);
 	}
 

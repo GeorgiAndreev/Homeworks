@@ -5,15 +5,16 @@ public class Student extends Person{
 	private float score;
 	
 	/*
-	 * public Student() {} - impossible constructor, 
-	 *                       must call parent's constructor without parameters
-	 * 						 (parent must have constructor without parameters) 
-	 *                       using super(); 
+	 * public Student() {} - impossible constructor, if parent has 
+	 *                        no constructor without parameters
+	 *                       (calls parent's constructor without parameters)
+	 * 						 so I added constructor without parameters in parent (Peson) 
+	 *     
 	 */
 	
 	
 	public Student() {
-		super();
+		
 	}
 
 	public Student(String name, short age, Gender gender, float score) {

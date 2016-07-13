@@ -2,6 +2,7 @@ package eightHomework_GeorgiAndreev;
 
 public class Employee extends Person{
 	
+	private static final int MIN_AGE_TO_RECEIVE_OVERTIME_MONEY = 18;
 	private static final float MULTIPLY_COEF_FOR_OVERTIME_WORKING_HOUR = 1.5f;
 	private static final int WORKING_HOURS_IN_A_WORKING_DAY = 8;
 	private float daySalary;
@@ -25,6 +26,9 @@ public class Employee extends Person{
 	float calculateOvertime(float hours) {
 		if (hours <= 0) {
 			System.out.println("Invalid overtime hours.");
+			return 0;
+		}
+		if (this.age < MIN_AGE_TO_RECEIVE_OVERTIME_MONEY) {
 			return 0;
 		}
 		float moneyForHour = this.daySalary / WORKING_HOURS_IN_A_WORKING_DAY;

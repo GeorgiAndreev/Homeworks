@@ -2,6 +2,8 @@ package eightHomework_GeorgiAndreev;
 
 public class Student extends Person{
 	
+	private static final int MAX_SCORE = 6;
+	private static final int MIN_SCORE = 2;
 	private float score;
 	
 	/*
@@ -19,7 +21,7 @@ public class Student extends Person{
 
 	public Student(String name, short age, Gender gender, float score) {
 		super(name, age, gender);
-		if ((score >= 2) && (score <= 6)) {
+		if ((score >= MIN_SCORE) && (score <= MAX_SCORE)) {
 			this.score = score;
 		} else {
 			System.out.println("Invalid score.");
